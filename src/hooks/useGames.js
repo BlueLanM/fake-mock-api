@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { gamesApi } from "../api/mockapi";
 
-export const useGames = () => {
+export const useGames = (simulateDelay = true, delayTime = 1000) => {
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
@@ -21,6 +21,11 @@ export const useGames = () => {
 
 		const fetchGames = async () => {
 			try {
+				// 模拟加载延迟
+				if (simulateDelay) {
+					await new Promise(resolve => setTimeout(resolve, delayTime));
+				}
+
 				const res = await gamesApi.getAll();
 
 				// 确保是数组

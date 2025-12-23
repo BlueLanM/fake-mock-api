@@ -1,4 +1,4 @@
-import GameApp from "./pages/game";
+import GameApp from "./pages/game-list";
 
 import "./App.css";
 
