@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useGames } from "./hooks/useGames";
+
 import "./App.css";
 
-function App() {
-	const [data, setData] = useState(0);
-
+const App = () => {
+	const { data, loading, error } = useGames();
+	console.log(data,"data");
+	
 	return (
-		<div>
-			123
+		<div className="games-grid">
+			{data.map((game) => (
+				<div key={game.id} className="game-card">
+					<h3>{game.title}</h3>
+				</div>
+			))}
 		</div>
 	);
 }

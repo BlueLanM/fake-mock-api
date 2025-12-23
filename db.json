@@ -1,34 +1,29 @@
 {
-  "posts": [
-    {
-      "id": "2",
-      "title": "another title",
-      "views": 200
-    },
-    {
-      "id": "fb47",
-      "title": "1",
-      "views": 0
-    },
-    {
-      "id": "dce2",
-      "title": "3",
-      "views": 0
-    }
-  ],
-  "comments": [
+  "games": [
     {
       "id": "1",
-      "text": "a comment about post 1",
-      "postId": null
+      "title": "CSGO",
+      "views": 2000
     },
     {
       "id": "2",
-      "text": "another comment about post 1",
-      "postId": null
+      "title": "APEX",
+      "views": 1000
+    },
+    {
+      "id": "3",
+      "title": "LOL",
+      "views": 500
+    },
+    {
+      "id": "4",
+      "title": "Valorant",
+      "views": 300
+    },
+    {
+      "id": "5",
+      "title": "COD",
+      "views": 100
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
