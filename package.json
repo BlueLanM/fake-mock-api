@@ -1,5 +1,5 @@
 {
-	"name": "test-json",
+	"name": "fake-mock-api",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
