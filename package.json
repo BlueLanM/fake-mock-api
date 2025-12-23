@@ -17,6 +17,15 @@
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
 	},
+	"eslintConfig": {
+		"extends": [
+			"react-app"
+		],
+		"rules": {
+			"react/jsx-uses-react": "off",
+			"react/react-in-jsx-scope": "off"
+		}
+	},
 	"devDependencies": {
 		"@eslint/js": "^9.25.0",
 		"@types/react": "^19.1.2",
