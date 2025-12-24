@@ -4,6 +4,10 @@
 
 ### **如果想模拟真实的增删改查，可以使用[mockapi](https://mockapi.io/)。**
 
+- 注意，如果使用了mockapi进行模拟，其中的参数和json-server有区别
+- MockAPI.io 的分页参数不同：应该使用 page 和 limit，而不是 _page 和 _per_page
+- 搜索参数不同：MockAPI.io 使用 search 或直接字段名，而不是 q
+
 ## ✨ 项目简介
 
 包含增删改查（CRUD）等基础功能。使用 JSON Server 作为模拟后端 API，只可作为模拟使用，不具备真实数据的变更。
