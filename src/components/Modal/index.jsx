@@ -14,7 +14,9 @@ const Modal = ({
 	maskClosable = true,
 	closable = true,
 	footer = null,
-	className = ''
+	className = '',
+	confirmLoading = false,
+	cancelButtonVisible = true
 }) => {
 	// 处理ESC键关闭
 	useEffect(() => {
@@ -59,10 +61,12 @@ const Modal = ({
 		if (footer === null) {
 			return (
 				<div className="modal-footer">
-					<Button type="default" onClick={handleCancel}>
-						{cancelText}
-					</Button>
-					<Button type="primary" onClick={handleOk}>
+					{cancelButtonVisible && (
+						<Button type="default" onClick={handleCancel}>
+							{cancelText}
+						</Button>
+					)}
+					<Button type="primary" onClick={handleOk} loading={confirmLoading}>
 						{okText}
 					</Button>
 				</div>

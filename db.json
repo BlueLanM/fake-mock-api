@@ -1,34 +1,39 @@
 {
   "games": [
     {
-      "id": "1",
+      "id": 1,
       "title": "CSGO",
       "views": 2000
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "Pokemon",
       "views": 1000
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "APEX",
       "views": 800
     },
     {
-      "id": "4",
+      "id": 4,
       "title": "Valorant",
       "views": 600
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "LOL",
       "views": 500
     },
     {
-      "id": "6",
       "title": "The Finals",
-      "views": 400
+      "views": 300,
+      "id": 6
+    },
+    {
+      "title": "蔚蓝",
+      "views": 100,
+      "id": 7
     }
   ]
 }

@@ -1,5 +1,7 @@
 .game-container {
 	display: flex;
+	flex-direction: column;
+	padding: 20px;
 }
 .game-action{
 	display: flex;
@@ -8,7 +10,19 @@
 }
 .game-header{
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+	gap: 16px;
+}
+.game-header-left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.game-header-right {
+	display: flex;
+	align-items: center;
 	gap: 10px;
 }
 .game-modal-content{
