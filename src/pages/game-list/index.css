@@ -1,3 +1,22 @@
 .game-container {
 	display: flex;
 }
+.game-action{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.game-header{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.game-modal-content{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.game-flex{
+	display: flex;
+	align-items: center;
+}

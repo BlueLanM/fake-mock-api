@@ -2,9 +2,9 @@ import apiService from './service.js';
 
 export const gamesApi = {
 	// 获取所有游戏
-	getAll: () => apiService.get('/games'),
+	getAll: (_page, _per_page) => apiService.get('/games', { _page, _per_page }),
 
-	// 获取单篇游戏
+	// 获取单个游戏
 	getById: (id) => apiService.get(`/games/${id}`),
 
 	// 创建游戏
