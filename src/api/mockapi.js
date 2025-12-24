@@ -17,5 +17,5 @@ export const gamesApi = {
 	delete: (id) => apiService.delete(`/games/${id}`),
 
 	// 搜索游戏
-	search: (query) => apiService.get('/games', { q: query })
+	search: (query) => apiService.get('/games', { search: query })
 };
